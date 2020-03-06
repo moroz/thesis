@@ -1,0 +1,12 @@
+#*.pdf
+*.log
+*.aux
+**~
+*.idx
+*.ind
+*.ilg
+*.out
+revision.tex
+output_with_index.tex
+*.synctex.gz
+auto/

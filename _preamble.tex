@@ -1,0 +1,31 @@
+\usepackage[no-math]{fontspec}
+\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage[compact]{titlesec}
+\usepackage[all]{nowidow}
+\usepackage{setspace,url,indentfirst,hyphenat,xeCJK,makeidx,sectsty,fancyhdr,csquotes,emptypage}
+\usepackage[top=2.5cm,left=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
+\setmainfont[Mapping=times]{Adobe Garamond Pro}
+\setsansfont[Scale=0.88]{Myriad Pro}
+\setCJKmainfont[Scale=0.89]{Source Han Serif TC}
+\setCJKsansfont{Source Han Sans TW}
+\setCJKmonofont{Source Han Sans TW}
+\newfontfamily\pyfont{Adobe Text Pro}
+\newcommand{\toponim}[1]{\nohyphens{\pyfont #1}}
+\newcommand{\nazwisko}[1]{\nohyphens{\pyfont #1}}
+\newcommand{\pinyin}[1]{\nohyphens{\pyfont\itshape #1}}
+\newcommand{\defspacing}{\spacing{1.32}}
+\newcommand{\quotespacing}{\spacing{1.1}}
+\let\fnm=\footnotemark
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE]{\nouppercase\leftmark}
+\fancyhead[RO]{\nouppercase\rightmark}
+\fancyfoot[CE,CO]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+\newcommand{\ibid}{ (\textit{Ibidem}).}
+\newcommand{\longquote}[1]{\quotespacing\blockquote{\itshape #1}\defspacing}
+\urlstyle{sf}
+
+\author{Karol Moroz 莫若思}
+\title{A Comparative Analysis of the Esperanto and Chinese Translations of \textit{Marta} by Eliza Orzeszkowa}
+\newcommand{\titlezh}{奥西斯歌《孤雁淚》的波蘭文原文版及其世界語、中文譯本的比較}
