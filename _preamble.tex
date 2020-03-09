@@ -3,11 +3,17 @@
 \usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
 \usepackage[compact]{titlesec}
 \usepackage[all]{nowidow}
-\usepackage{setspace,url,indentfirst,hyphenat,xeCJK,makeidx,sectsty,fancyhdr,emptypage}
+\usepackage{setspace,indentfirst,hyphenat,xeCJK,makeidx,sectsty,fancyhdr,emptypage}
+\PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
+\hypersetup{
+  colorlinks = true,
+  linkbordercolor = {white},
+  urlcolor = DarkBlue
+}
 \usepackage{csquotes}
 \usepackage[top=2.5cm,left=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
 \setmainfont[Mapping=tex-text]{Minion Pro}
-\setsansfont[Scale=0.88]{Myriad Pro}
+\setsansfont[Scale=0.88]{Helvetica}
 \setCJKmainfont[Scale=0.89]{Source Han Serif TC}
 \setCJKsansfont{Source Han Sans TW}
 \setCJKmonofont{Source Han Sans TW}
@@ -36,4 +42,4 @@
 {\normalfont\huge}{{\thechapter}}{10pt}{}
 \titlespacing{\chapter}{0pt}{0.5em}{0.5em}
 
-\hyphenation{Mil-kow-szczy-zna}
+\hyphenation{Mil-kow-szczy-zna Biały-stok}
