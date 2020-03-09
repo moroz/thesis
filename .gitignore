@@ -3,6 +3,8 @@
 *.aux
 **~
 *.idx
+*.fdb_latexmk
+*.fls
 *.ind
 *.ilg
 *.out
