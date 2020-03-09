@@ -5,6 +5,7 @@
 *.idx
 *.fdb_latexmk
 *.fls
+*.toc
 *.ind
 *.ilg
 *.out
