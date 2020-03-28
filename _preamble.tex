@@ -26,12 +26,13 @@
 \newcommand{\defspacing}{\spacing{1.65}}
 \newcommand{\quotespacing}{\spacing{1.1}}
 \let\fnm=\footnotemark
+\newcommand{\timestamp}{Compiled {\ddmmyyyydate\today} at \currenttime}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE]{\nouppercase\leftmark}
 \fancyhead[RO]{\nouppercase\rightmark}
 \fancyfoot[CE,CO]{\thepage}
-\fancyfoot[RO]{\footnotesize\color{CompilationTime} Compiled {\ddmmyyyydate\today} at \currenttime}
+\fancyfoot[RO]{\footnotesize\color{CompilationTime}\timestamp}
 \renewcommand{\headrulewidth}{0pt}
 \newcommand{\ibid}{ (\textit{Ibidem}).}
 \newcommand{\longquote}[1]{\quotespacing\blockquote{\itshape #1}\defspacing}
