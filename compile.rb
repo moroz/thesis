@@ -1,6 +1,9 @@
 #!/usr/bin/env ruby
 # frozen_string_literal: true
 
+OUTFILE = 'thesis_with_index'
+INDEXED_OUTPUT = 'indexed'
+
 def read_patterns(filename)
   hash = {}
   File.open(filename).each_line do |line|
@@ -33,7 +36,7 @@ def remove_comment_blocks(str)
   str.gsub(/\\if 0.+\\fi/m, '')
 end
 
-default_files = %w(introduction.tex esperanto.tex chapter_three.tex)
+default_files = %w[introduction.tex esperanto.tex chapter_three.tex]
 paragraphs = read_paragraphs(*default_files)
 patterns = read_patterns('patterns.txt')
 
@@ -43,11 +46,12 @@ patterns.each do |key, val|
   end
 end
 
-File.write 'indexed.tex', paragraphs.join("\n\n")
-system 'xelatex praca'
-system 'makeindex praca.idx'
-system 'xelatex praca'
-system 'xelatex praca'
+File.write "#{INDEXED_OUTPUT}.tex", paragraphs.join("\n\n")
+compile_command = "xelatex #{OUTFILE}"
+system compile_command
+system "makeindex #{OUTFILE}.idx"
+system compile_command
+system compile_command
 
 # File.delete(*Dir['./*.log', './*.ilg', './*.idx', './*.ind'])
 File.delete(*Dir['./*.log'])
