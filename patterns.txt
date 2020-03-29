@@ -1,5 +1,5 @@
 Lu Xun            Lu Xun 魯迅
-Zhong Xianmin     Zhong Xianmin 錘憲民
+Zhong Xianmin     Zhong Xianmin 鍾憲民
 
 Poland
 Congress Poland
@@ -10,6 +10,14 @@ Warsaw
 Moscow
 ophthalmolog(ist|y)       ophthalmology
 Doktoro Esperanto
+Grodno
+Vilnius
+Niemen
+Cham                  Boor, The
+Dziurdziowie          Dziurdzia Family, The
+Nad Niemnem           On the Banks of the Niemen
+Tendenzliteratur
+Nobel Prize
 
 Positivism
 Enlightenment
