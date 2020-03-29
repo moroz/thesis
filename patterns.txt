@@ -5,12 +5,15 @@ Poland
 Congress Poland
 Russian Empire
 Białystok
+Milkowszczyzna
 Warsaw
 Moscow
 ophthalmolog(ist|y)       ophthalmology
 Doktoro Esperanto
 
 Positivism
+Enlightenment
+rationalism
 Unua libro
 auxilliary language
 bridge language
@@ -34,7 +37,6 @@ Korea
 China
 Sinitic cultural circle
 Vietnam
-Mair
 Yiddish
 Jewish                Jew
 Polish
@@ -42,7 +44,10 @@ idealis.              idealism
 Latin                 Latin language
 Ancient Greek         Ancient Greek language
 Philological Gymnasium
+Belarus
 Belarussian
+Order of the Holy Sacrament
+January Uprising
 English               English language
 German                German language
 French                French language
