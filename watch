@@ -1,0 +1,9 @@
+#!/bin/bash
+
+inotifywait -m . -e modify |
+  while read path action file; do
+    if [[ "$file" =~ .*tex$ ]]; then # Does the file end with .xml?
+      /usr/bin/xelatex main -interaction=batchmode -halt-on-error
+    fi
+  done
+
