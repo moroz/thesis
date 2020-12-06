@@ -1,9 +1,9 @@
 \usepackage[english]{babel}
-\usepackage[no-math]{fontspec}
-\usepackage[usenames,dvipsnames,svgnames,table]{xcolor}
+\usepackage{fontspec}
+\usepackage[usenames,dvipsnames,svgnames]{xcolor}
 \usepackage[compact]{titlesec}
 \usepackage[all]{nowidow}
-\usepackage{setspace,indentfirst,hyphenat,xeCJK,makeidx,sectsty,fancyhdr,emptypage,datetime}
+\usepackage{setspace,indentfirst,hyphenat,xeCJK,makeidx,sectsty,emptypage,datetime,fancyhdr}
 \PassOptionsToPackage{hyphens}{url}\usepackage{hyperref}
 \hypersetup{
   colorlinks = true,
@@ -14,12 +14,13 @@
 \usepackage{csquotes}
 \definecolor{CompilationTime}{HTML}{aaaaaa}
 \usepackage[top=2.5cm,left=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
-\setmainfont[Mapping=tex-text]{Gentium Plus}
-\setsansfont[Scale=0.88]{Gentium Plus}
+\setmainfont[Mapping=tex-text]{Gentium Basic}
+\setsansfont[Scale=0.88]{Gentium Basic}
 \setCJKmainfont[Scale=0.89]{Noto Serif CJK TC}
 \setCJKsansfont{Noto Sans CJK TC}
 \setCJKmonofont{Noto Sans CJK TC}
 \newfontfamily\pyfont{Gentium Plus}
+\newfontfamily\cyrfont{Gentium Plus}
 \newfontfamily\ipafont[Scale=0.95]{Doulos SIL}
 \newcommand{\toponim}[1]{\nohyphens{\pyfont #1}}
 \newcommand{\nazwisko}[1]{\nohyphens{\pyfont #1}}
@@ -45,9 +46,10 @@
 \def\titlezh{愛麗查・奥西斯歌《孤雁淚》的波蘭文\\原文版及其世界語、中文譯本的比較}
 
 \titleformat{\chapter}[hang]
-{\normalfont\huge}{{\thechapter}}{10pt}{}
+{\normalfont\LARGE\bfseries}{{\thechapter}}{10pt}{}
 \titlespacing{\chapter}{0pt}{0.5em}{0.5em}
 
 \hyphenation{Mil-kow-szczy-zna Biały-stok Меж-ду-на-род-ный war-szaw-ski}
+
 
 \newcommand{\noteonrussian}{\footnote{All Russian terms in the thesis are rendered in original Cyryllic script and transliterated according to the BGN/PCGN romanization system for Russian. Unless noted otherwise, all terms are listed in their pre-reform spelling, the standard form before the October Revolution of 1917.}}
