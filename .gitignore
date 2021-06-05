@@ -13,3 +13,4 @@ revision.tex
 output_with_index.tex
 *.synctex.gz
 auto/
+.auctex-auto

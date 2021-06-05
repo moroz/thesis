@@ -1,5 +1,5 @@
 \usepackage[english]{babel}
-\usepackage{fontspec}
+\usepackage{fontspec,zhnumber}
 \usepackage[usenames,dvipsnames,svgnames]{xcolor}
 \usepackage[compact]{titlesec}
 \usepackage[all]{nowidow}
@@ -11,7 +11,7 @@
   urlcolor = DarkBlue,
   linkcolor = black
 }
-\usepackage{csquotes}
+\usepackage[autostyle]{csquotes}
 \definecolor{CompilationTime}{HTML}{aaaaaa}
 \usepackage[top=2.5cm,left=3.5cm,right=2.5cm,bottom=2.5cm]{geometry}
 \setmainfont[Mapping=tex-text]{Gentium Basic}
@@ -22,14 +22,6 @@
 \newfontfamily\pyfont{Gentium Plus}
 \newfontfamily\cyrfont{Gentium Plus}
 \newfontfamily\ipafont[Scale=0.95]{Doulos SIL}
-\newcommand{\toponim}[1]{\nohyphens{\pyfont #1}}
-\newcommand{\nazwisko}[1]{\nohyphens{\pyfont #1}}
-\newcommand{\pinyin}[1]{\nohyphens{\pyfont\itshape #1}}
-\newcommand{\ipa}[1]{{\ipafont #1}}
-\newcommand{\defspacing}{\spacing{1.65}}
-\newcommand{\quotespacing}{\spacing{1.1}}
-\let\fnm=\footnotemark
-\newcommand{\timestamp}{Compiled {\ddmmyyyydate\today} at \currenttime}
 \pagestyle{fancy}
 \fancyhf{}
 \fancyhead[LE]{\nouppercase\leftmark}
@@ -37,9 +29,8 @@
 \fancyfoot[CE,CO]{\thepage}
 \fancyfoot[RO]{\footnotesize\color{CompilationTime}\timestamp}
 \renewcommand{\headrulewidth}{0pt}
-\newcommand{\ibid}{ (\textit{Ibidem}).}
-\newcommand{\longquote}[1]{\quotespacing\blockquote{\itshape #1}\defspacing}
 \urlstyle{sf}
+\zhnumsetup{time=Chinese}
 
 \author{Karol Moroz 莫若思}
 \title{A Comparative Analysis of the Esperanto and Chinese Translations of \textit{Marta} by Eliza Orzeszkowa}
@@ -50,6 +41,4 @@
 \titlespacing{\chapter}{0pt}{0.5em}{0.5em}
 
 \hyphenation{Mil-kow-szczy-zna Biały-stok Меж-ду-на-род-ный war-szaw-ski}
-
-
-\newcommand{\noteonrussian}{\footnote{All Russian terms in the thesis are rendered in original Cyryllic script and transliterated according to the BGN/PCGN romanization system for Russian. Unless noted otherwise, all terms are listed in their pre-reform spelling, the standard form before the October Revolution of 1917.}}
+\input{_commands}

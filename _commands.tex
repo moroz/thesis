@@ -1,0 +1,23 @@
+\newcommand{\toponim}[1]{\nohyphens{\pyfont #1}}
+\newcommand{\nazwisko}[1]{\nohyphens{\pyfont #1}}
+\newcommand{\pinyin}[1]{\nohyphens{\pyfont\itshape #1}}
+\newcommand{\ipa}[1]{{\ipafont #1}}
+\newcommand{\defspacing}{\spacing{1.65}}
+\newcommand{\quotespacing}{\spacing{1.1}}
+\let\fnm=\footnotemark
+\newcommand{\timestamp}{Compiled {\ddmmyyyydate\today} at \currenttime}
+\newcommand{\ibid}{ (\textit{Ibidem}).}
+\newcommand{\longquote}[1]{\quotespacing\blockquote{\itshape #1}\defspacing}
+
+\newcommand{\noteonrussian}{\footnote{All Russian terms in the thesis are rendered in original Cyryllic script and transliterated according to the BGN/PCGN romanization system for Russian. Unless noted otherwise, all terms are listed in their pre-reform spelling, the standard form before the October Revolution of 1917.}}
+
+\makeatletter
+%Take the original environment definition and change the leftmargin to 1cm
+\renewenvironment*{displayquote}
+  {\begingroup\setlength{\leftmargini}{1cm}\csq@getcargs{\csq@bdquote{}{}}}
+  {\csq@edquote\endgroup}
+\makeatother
+%Hooks
+%Use single spacing, set 10pt font, and beginning quotes
+\renewcommand{\mkbegdispquote}
+    {\onehalfspacing\itshape}
