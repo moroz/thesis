@@ -2,8 +2,7 @@
 \newcommand{\nazwisko}[1]{\nohyphens{\pyfont #1}}
 \newcommand{\pinyin}[1]{\nohyphens{\pyfont\itshape #1}}
 \newcommand{\ipa}[1]{{\ipafont #1}}
-\newcommand{\defspacing}{\spacing{1.65}}
-\newcommand{\quotespacing}{\spacing{1.1}}
+\newcommand{\defspacing}{\spacing{1.5}}
 \let\fnm=\footnotemark
 \newcommand{\timestamp}{Compiled {\ddmmyyyydate\today} at \currenttime}
 \newcommand{\ibid}{ (\textit{Ibidem}).}
@@ -17,7 +16,4 @@
   {\begingroup\setlength{\leftmargini}{1cm}\csq@getcargs{\csq@bdquote{}{}}}
   {\csq@edquote\endgroup}
 \makeatother
-%Hooks
-%Use single spacing, set 10pt font, and beginning quotes
-\renewcommand{\mkbegdispquote}
-    {\onehalfspacing\itshape}
+\renewcommand{\mkbegdispquote}{\onehalfspacing\itshape}
